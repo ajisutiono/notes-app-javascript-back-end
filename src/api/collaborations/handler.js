@@ -1,4 +1,4 @@
-const ClientError = require('../../exceptions/ClientError');
+// const ClientError = require('../../exceptions/ClientError');
 
 class CollaborationsHandler {
   constructor(collaborationsService, notesService, validator) {
@@ -29,7 +29,7 @@ class CollaborationsHandler {
     return response;
   }
 
-  async deleteCollaborationHandler(request, h) {
+  async deleteCollaborationHandler(request) {
     this._validator.validateCollaborationPayload(request.payload);
     const { id: credentialId } = request.auth.credentials;
     const { noteId, userId } = request.payload;
