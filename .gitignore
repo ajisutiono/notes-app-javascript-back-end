@@ -2,3 +2,4 @@ node_modules
 notes-api-newserversg.pem
 .env
 .prod.env
+src/api/uploads/file
